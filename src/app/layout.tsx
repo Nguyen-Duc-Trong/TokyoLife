@@ -20,7 +20,7 @@ export default function RootLayout({
         <link type="image/png" href="https://file.hstatic.net/200000532555/file/logo_bong_hoa_45c8e9e2088448ad89c72b0377a245a2.png" rel="icon"></link>
       </head>
       <body >
-        <div className='min-h-[100vh] '>
+        <div className='min-h-[100vh] bg-[#F7F7F7] '>
           <Providers>
             {
               pathname != "/404"
