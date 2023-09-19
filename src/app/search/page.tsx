@@ -1,10 +1,9 @@
-
 export default function Home() {
-    return (
-        <>
+  return (
+    <>
             <div className='bg-white text-center  '>
-                kết quả tìm kiếm
+                Search
             </div>
         </>
-    )
+  );
 }

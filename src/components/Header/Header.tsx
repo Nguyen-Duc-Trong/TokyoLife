@@ -2,13 +2,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
+import Search from "../Search";
 const Header = () => {
   return (
     <header className="py-[10px]">
-      <div className="flex justify-between container items-center">
-        <h1 className="cursor-pointer">
+      <div className="flex justify-between container items-center p-[15px]">
+        <h1 className="cursor-pointer pl-[15px] pr[15px]">
           <img
-            className="w-[220px]"
+            className="w-[220px] "
             src="https://file.hstatic.net/200000532555/file/logo-tkl-01_50c40d291088493182dd995d3da9e130.png"
             alt=""
           />
@@ -86,7 +87,9 @@ const Header = () => {
             <span className="text-[12px]">Giỏ hàng</span>
           </div>
         </div>
+        
       </div>
+      <Search/>
     </header>
   );
 };
