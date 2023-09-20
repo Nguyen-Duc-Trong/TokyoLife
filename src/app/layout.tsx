@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Loading from '@/components/Loading/Loading';
 import Footer from '@/components/Footer/Footer';
 import { Providers } from '@/redux/Provider';
+
 export default function RootLayout({
   children,
 }: {
