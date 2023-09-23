@@ -2,6 +2,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
+import Link from "next/link";
+import { Popover, Space } from "antd";
+import PopupHeader from "./PopupHeader/PopupHeader";
+// import { dataHeader } from "./dataHeader";
+import Navba from "./Navba/Navba";
 const Header = () => {
   return (
     <header className="py-[10px] bg-[#fff] ">
@@ -13,43 +18,7 @@ const Header = () => {
             alt=""
           />
         </h1>
-        <ul className="flex">
-          <li className="">
-            <a className="mx-[10px]" href="">
-              Nữ
-            </a>
-          </li>
-          <li className="">
-            <a className="mx-[10px]" href=""></a>
-            Nam
-          </li>
-          <li className="">
-            <a className="mx-[10px]" href="">
-              Trẻ em
-            </a>
-          </li>
-          <li className="">
-            <a className="mx-[10px]" href="">
-              Gia dụng
-            </a>
-          </li>
-          <li className="">
-            <a className="mx-[10px]" href="">
-              Làm đẹp
-            </a>
-          </li>
-          <li className="">
-            <a className="mx-[10px]" href="">
-              Cửa hàng
-            </a>
-          </li>
-          <li className="">
-            <a className="mx-[10px]" href="">
-              Tin tức
-            </a>
-          </li>
-        </ul>
-
+          <PopupHeader/>
         <div className="flex">
           <button className="border rounded-3xl">
             <svg
