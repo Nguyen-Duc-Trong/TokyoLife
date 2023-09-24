@@ -5,7 +5,6 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
 import { Popover, Space } from "antd";
 import PopupHeader from "./PopupHeader/PopupHeader";
-// import { dataHeader } from "./dataHeader";
 import Navba from "./Navba/Navba";
 const Header = () => {
   return (
