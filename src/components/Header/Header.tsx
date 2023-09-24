@@ -7,6 +7,7 @@ import { Popover, Space } from "antd";
 import PopupHeader from "./PopupHeader/PopupHeader";
 import Navba from "./Navba/Navba";
 const Header = () => {
+
   return (
     <header className="py-[10px] bg-[#fff] ">
       <div className="flex justify-between container items-center">
