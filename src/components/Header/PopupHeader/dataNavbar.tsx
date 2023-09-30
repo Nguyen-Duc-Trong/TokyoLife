@@ -58,12 +58,8 @@ import { uuid } from "uuidv4"
                         title: "Kính mắt",
                         subtitle : []
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -99,12 +95,8 @@ import { uuid } from "uuidv4"
                         title: "Chống nắng SunStop",
                         subtitle : ["Áo khoác","Chân váy","Khẩu trang"]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -130,12 +122,8 @@ import { uuid } from "uuidv4"
                         title: "Phụ kiện khác",
                         subtitle: ["Tất nữ","Mũ","Khăn quàng","Kính mắt","Kính bơi","Khẩu trang","Găng tay các loại",]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -151,12 +139,8 @@ import { uuid } from "uuidv4"
                         title: "Ưu đãi phụ kiện",
                         subtitle : ["Ưu đãi giày cao gót sale up 50%","Kính phân cực giảm 50%","Balo khuyến mãi lên đến 50%",]
                     }
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -207,17 +191,11 @@ import { uuid } from "uuidv4"
                         title: "Bịt tai",
                         subtitle : ["", "", ""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
             }
         ],
         url:""
-=======
-                ]
-            }
-        ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
     },
     {
         id: uuid(),
@@ -262,12 +240,8 @@ import { uuid } from "uuidv4"
                         title: "Giày-Dép",
                         subtitle : ["", "", ""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -293,12 +267,8 @@ import { uuid } from "uuidv4"
                         title: "Chống nắng SunStop",
                         subtitle : ["Áo khoác", "Khẩu trang", ""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -319,12 +289,8 @@ import { uuid } from "uuidv4"
                         title: "Phụ kiện khác",
                         subtitle : ["Kính mắt", "Kính bơi", "Mũ", "Khăn quàng", "Thắt lưng", "Tất chân","Khẩu trang các loại","Găng tay"]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -340,12 +306,8 @@ import { uuid } from "uuidv4"
                         title: "Ưu đãi phụ kiện",
                         subtitle : ["Ưu đãi giày thể thao sale up to 50%", "Kính phân cực giảm 50%", "Balo khuyến mãi lên đến 50%"]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -386,17 +348,11 @@ import { uuid } from "uuidv4"
                         title: "Bịt tai",
                         subtitle : ["", "", ""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
             }
         ],
         url:""
-=======
-                ]
-            }
-        ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
     },
     {
         id: uuid(),
@@ -446,12 +402,8 @@ import { uuid } from "uuidv4"
                         title: "Dép nhựa thời trang",
                         subtitle : ["", "", ""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -487,12 +439,8 @@ import { uuid } from "uuidv4"
                         title: "Chống nắng SunStop",
                         subtitle : ["Áo khoác chống nắng", "", ""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -513,12 +461,8 @@ import { uuid } from "uuidv4"
                         title: "Khác",
                         subtitle : ["Khẩu trang các loại", "Mũ len trẻ em", "Dây buộc tóc", "Kính bơi"]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -534,12 +478,8 @@ import { uuid } from "uuidv4"
                         title: "Ưu đãi phụ kiện",
                         subtitle : ["Balo khuyến mãi lên đến 50%", "Ưu đãi giày thể thao lên đến 50%", ""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -580,17 +520,11 @@ import { uuid } from "uuidv4"
                         title: "Bịt tai",
                         subtitle : ["","",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
             }
         ],
         url:""
-=======
-                ]
-            }
-        ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
     },
     {
         id: uuid(),
@@ -630,12 +564,8 @@ import { uuid } from "uuidv4"
                         title: "Bình nước và Bình giữ nhiệt",
                         subtitle : ["Bình giữ nhiệt","Cốc giữ nhiệt","Bình nước"]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -661,12 +591,8 @@ import { uuid } from "uuidv4"
                         title: "Vệ sinh cá nhân",
                         subtitle : ["Vệ sinh răng miệng","Vệ sinh cơ thể",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -677,17 +603,11 @@ import { uuid } from "uuidv4"
                         title: "Ưu đãi gia dụng",
                         subtitle : ["Ưu đãi gia dụng cá nhân 30%",]
                     }
-<<<<<<< HEAD
                 ],
                 url:""
             }
         ],
         url:""
-=======
-                ]
-            }
-        ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
     },
     {
         id: uuid(),
@@ -722,17 +642,11 @@ import { uuid } from "uuidv4"
                         title: "Nước hoa",
                         subtitle : ["","",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
             }
         ],
         url:""
-=======
-                ]
-            }
-        ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
     },
     {
         id: uuid(),
@@ -747,17 +661,11 @@ import { uuid } from "uuidv4"
                         title: "",
                         subtitle : [""]
                     }
-<<<<<<< HEAD
                 ],
                 url:""
             }
         ],
         url:""
-=======
-                ]
-            }
-        ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
     },
     {
         id: uuid(),
@@ -777,12 +685,8 @@ import { uuid } from "uuidv4"
                         title: "Tin ưu đãi",
                         subtitle : ["","",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -808,12 +712,8 @@ import { uuid } from "uuidv4"
                         title: "Phụ kiện",
                         subtitle : ["","",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -829,12 +729,8 @@ import { uuid } from "uuidv4"
                         title: "Món ngon",
                         subtitle : ["","",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -850,12 +746,8 @@ import { uuid } from "uuidv4"
                         title: "Chế độ luyện tập",
                         subtitle : ["","",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -871,12 +763,8 @@ import { uuid } from "uuidv4"
                         title: "Địa điểm du lịch",
                         subtitle : ["","",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -892,12 +780,8 @@ import { uuid } from "uuidv4"
                         title: "Sống xanh",
                         subtitle : ["","",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -913,12 +797,8 @@ import { uuid } from "uuidv4"
                         title: "Ẩm thực",
                         subtitle : ["","",""]
                     },
-<<<<<<< HEAD
                 ],
                 url:""
-=======
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -926,18 +806,11 @@ import { uuid } from "uuidv4"
                 detailChild : [
                     {
                         id : uuid(),
-<<<<<<< HEAD
                         title: "",
                         subtitle : ["", "", ""]
                     }
                 ],
                 url:""
-=======
-                        title: "vvvv",
-                        subtitle : ["aaaaa", "bbbb", "ccccc"]
-                    }
-                ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
             },
             {
                 id: uuid(),
@@ -948,17 +821,11 @@ import { uuid } from "uuidv4"
                         title: "",
                         subtitle : ["", "", ""]
                     }
-<<<<<<< HEAD
                 ],
                 url:""
             },
         ],
         url:""
-=======
-                ]
-            },
-        ]
->>>>>>> 7dd90eace31ee76b83d95078246acc19cac7c474
     },
 ]
 export default dataNavbar
