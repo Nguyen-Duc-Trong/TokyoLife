@@ -20,8 +20,8 @@ const PopupHeader = () => {
                                             <ul className="  realtive">
                                                 {it.detail.map((it)=>{
                                                 return (
-                                                <div className='flex justify-between items-center group/gr2 hover:bg-black hover:text-white p-[10px] px-[10px] w-[90%] m-auto mt-[10px] rounded-[5px] cursor-pointer'>
-                                                    <li key={it.id} className="font-semibold">
+                                                <div  key={it.id}  className='flex justify-between items-center group/gr2 hover:bg-black hover:text-white p-[10px] px-[10px] w-[90%] m-auto mt-[10px] rounded-[5px] cursor-pointer'>
+                                                    <li  className="font-semibold">
                                                         <Link href={it.url}>
                                                             <span>
                                                                 {it.title}
@@ -31,7 +31,7 @@ const PopupHeader = () => {
                                                             <ul className=" flex flex-wrap bg-white pb-[10px] ml-[15px] mt-[10px]">
                                                                 {it.detailChild.map((it,index)=>{
                                                                 return(
-                                                                <li key={index} className={` ${index !==0 ? "hidden "
+                                                                <li key={it.id} className={` ${index !==0 ? "hidden "
                                                                     : "z-0" } w-[205px] bg-white mr-[30px] pr-[20px]
                                                                     pt-[10px] group-hover/gr2:z-50 group-hover/gr2:block
                                                                     `}>
