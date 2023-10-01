@@ -31,7 +31,7 @@
  .slick-prev::before{
     position: absolute;
     content: "←";
-    z-index: 10000;
+    z-index: 10;
     border-radius: 10rem;
     top: 0;
     font-size: 32px;
@@ -39,7 +39,7 @@
  .slick-next::before{
     position: absolute;
     content: "→";
-     z-index: 10000;
+     z-index: 10;
     border-radius: 10rem;
     top: 0;
     font-size: 32px;

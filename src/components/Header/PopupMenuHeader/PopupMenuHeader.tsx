@@ -3,7 +3,7 @@ import dataNavbar from "./dataNavbar";
 import {FaAngleRight} from "react-icons/fa"
 import Link from 'next/link';
 
-const PopupHeader = () => {
+const PopupMenuHeader = () => {
     return(
         <div className="md:block flex box-border ">
             <ul className="flex justify-around mx-[10px] h-[100%] ">
@@ -78,4 +78,4 @@ const PopupHeader = () => {
     )
 }
 
-export default PopupHeader
+export default PopupMenuHeader

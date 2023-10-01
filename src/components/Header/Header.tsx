@@ -3,29 +3,29 @@ import React,{useState, memo} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import {MdOutlineMenu} from "react-icons/md"
-import PopupHeader from "./PopupHeader/PopupHeader";
-import PopupMain from "./PopupHeader/components/PopupMain";
-import PopupTablet from "./PopupHeader/PopupTablet";
+import PopupMenuHeader from "@/components/Header/PopupMenuHeader/PopupMenuHeader";
+import PopupMenuHeaderRespon from "@/components/Header/PopupMenuHeader/PopupMenuHeaderRespon";
 const Header = () => {
 
-const [open,setOpen ] = useState(false)
+const [OpenPopupMenuRespon,setOpenPopupMenuRespon ] = useState(false)
+
 return (
 <header className="h-[65px] w-[100%] flex justify-center items-center bg-[#fff] sticky top-[-1px] z-[100] shadow-lg ">
   <div className="flex justify-between container items-center ">
     <div className=" top-[5px] text-[3rem]" >
-      <MdOutlineMenu className=" text-[35px] xl:hidden md:max-xl:block " onClick={()=>setOpen(!open)} />
+      <MdOutlineMenu className=" text-[35px] xl:hidden md:max-xl:block " onClick={()=>setOpenPopupMenuRespon(!OpenPopupMenuRespon)} />
         {
-          open && <PopupTablet setOpen={setOpen}  />
+          OpenPopupMenuRespon && <PopupMenuHeaderRespon setOpenPopupMenuRespon={setOpenPopupMenuRespon}  />
         }
     </div>
    
-   <h1 className="md:block cursor-pointer">
+    <h1 className="md:block cursor-pointer">
       <img className="w-[220px]"
         src="https://file.hstatic.net/200000532555/file/logo-tkl-01_50c40d291088493182dd995d3da9e130.png" alt="" />
     </h1>
 
     <div className=" max-lg:hidden">
-      <PopupHeader />
+      <PopupMenuHeader />
     </div>
   
     <div className="flex">
