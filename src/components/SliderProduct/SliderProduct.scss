@@ -1,53 +1,49 @@
-.slick-prev{
+.slick-prev, .slick-next{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1 !important;
-    left: 10px !important;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    width: 32px !important;
-    height: 32px !important;
-    text-align: center;
-    color: #444444;
-    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    z-index: 10000;
+    width: 32px;
+    height: 32px;
+    border-radius: 10rem;
 }
-
-
-.slick-prev:hover{
-    background: black;
+.slick-initialized:hover .slick-prev:before   {
+    color: black !important;
 }
-
-.slick-prev:focus{
-    background: black;
+.slick-initialized:hover .slick-next:before {
+    color: black !important;
+}
+.slick-prev{
+    left: 20px;
 }
 .slick-next{
-    position: absolute !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1 !important;
-    right: 35px !important;
-    border-radius: 50% ;
-    -webkit-border-radius: 50% ;
-    -moz-border-radius: 50% ;
-    -ms-border-radius: 50% ;
-    -o-border-radius: 50% ;
-    width: 32px !important;
-    height: 32px !important;
-    text-align: center;
-    color: #444444;
-    background-color: black;
+    right: 20px;
 }
-
-.slick-next:hover{
-    background: black;
+// .slick-prev:hover:before{
+//     color: black !important;
+ 
+// }
+// .slick-next:hover:before{
+//     color: black !important;
+    
+// }
+ .slick-prev::before{
+    position: absolute;
+    content: "←";
+    z-index: 10000;
+    border-radius: 10rem;
+    top: 0;
+    font-size: 32px;
 }
-
-.slick-next:focus{
-    background: black;
+ .slick-next::before{
+    position: absolute;
+    content: "→";
+     z-index: 10000;
+    border-radius: 10rem;
+    top: 0;
+    font-size: 32px;
+ }
+.centerMode{
+    padding: 0 96px;
 }

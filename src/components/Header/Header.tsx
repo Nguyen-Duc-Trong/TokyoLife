@@ -6,31 +6,28 @@ import {MdOutlineMenu} from "react-icons/md"
 import PopupHeader from "./PopupHeader/PopupHeader";
 import PopupMain from "./PopupHeader/components/PopupMain";
 import PopupTablet from "./PopupHeader/PopupTablet";
-import {AiFillCloseSquare} from "react-icons/ai"
 const Header = () => {
 
 const [open,setOpen ] = useState(false)
 return (
-<header className="h-[65px] w-[100%] flex justify-center items-center bg-[#fff] fixed top-0 z-[1000] ">
-  
-  <div className="md:flex justify-between container items-center ">
+<header className="h-[65px] w-[100%] flex justify-center items-center bg-[#fff] sticky top-[-1px] z-[100] shadow-lg ">
+  <div className="flex justify-between container items-center ">
     <div className=" top-[5px] text-[3rem]" >
-      <MdOutlineMenu className=" text-[3rem] xl:hidden md:max-xl:block " onClick={()=>setOpen(!open)} />
-      <div className={`absolute bg-white top-[65px]
-       left-[-34px] min-w-[300px] 
-       ${ open ? "md:max-xl:block " : " hidden" } `}>
-        <AiFillCloseSquare  className="absolute p-[0] bg-slate-300 text-[30px] right-[-30px]"  onClick={()=>setOpen(!open)}/>
-        <PopupTablet  />
-      </div> 
+      <MdOutlineMenu className=" text-[35px] xl:hidden md:max-xl:block " onClick={()=>setOpen(!open)} />
+        {
+          open && <PopupTablet setOpen={setOpen}  />
+        }
     </div>
-    <h1 className="md:block cursor-pointer">
+   
+   <h1 className="md:block cursor-pointer">
       <img className="w-[220px]"
         src="https://file.hstatic.net/200000532555/file/logo-tkl-01_50c40d291088493182dd995d3da9e130.png" alt="" />
     </h1>
 
-    <div className=" md:max-xl:hidden">
+    <div className=" max-lg:hidden">
       <PopupHeader />
     </div>
+  
     <div className="flex">
       <button className="border rounded-3xl">
         <svg className="mx-[19px] my-[10px] svg search" height="18px" width="25px" viewBox="0 0 24 24" fill="#c5cee0">

@@ -652,18 +652,18 @@ import { uuid } from "uuidv4"
         id: uuid(),
         title: "Cửa Hàng",
         detail : [
-            {
-                id: uuid(),
-                title: "",
-                detailChild : [
-                    {
-                        id : uuid(),
-                        title: "",
-                        subtitle : [""]
-                    }
-                ],
-                url:""
-            }
+            // {
+            //     id: uuid(),
+            //     title: "",
+            //     detailChild : [
+            //         {
+            //             id : uuid(),
+            //             title: "",
+            //             subtitle : [""]
+            //         }
+            //     ],
+            //     url:""
+            // }
         ],
         url:""
     },

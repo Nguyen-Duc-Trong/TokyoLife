@@ -21,10 +21,40 @@ slidesToShow: 5,
 slidesToScroll: 1,
 autoplay:true,
 autoplaySpeed: 2500,
-
+responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        centerMode: true,
+        dots: false,
+        centerPadding: '120px',
+      }
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        centerMode: true,
+        centerPadding: '96px', 
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '96px',    
+      }
+    }
+]
 };
+
 return(
-    <div>
+    <div >
         <Slider {...settings} >
             {data?.map((it:any)=>
             <Product key={it.id} data={it} /> )}

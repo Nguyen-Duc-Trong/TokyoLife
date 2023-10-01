@@ -27,6 +27,7 @@ export default function RootLayout({
               pathname != "/404"
                 ?
                 <>
+                  <div className="w-[100%] h-[43px] bg-[#c92027] flex justify-center items-center text-[#ffffff]">TOKYO LAI</div>
                   <Header />
                   {children}
                   <Footer />
