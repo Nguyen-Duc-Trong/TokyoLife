@@ -58,7 +58,8 @@ import { uuid } from "uuidv4"
                         title: "Kính mắt",
                         subtitle : []
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -94,7 +95,8 @@ import { uuid } from "uuidv4"
                         title: "Chống nắng SunStop",
                         subtitle : ["Áo khoác","Chân váy","Khẩu trang"]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -120,7 +122,8 @@ import { uuid } from "uuidv4"
                         title: "Phụ kiện khác",
                         subtitle: ["Tất nữ","Mũ","Khăn quàng","Kính mắt","Kính bơi","Khẩu trang","Găng tay các loại",]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -136,7 +139,8 @@ import { uuid } from "uuidv4"
                         title: "Ưu đãi phụ kiện",
                         subtitle : ["Ưu đãi giày cao gót sale up 50%","Kính phân cực giảm 50%","Balo khuyến mãi lên đến 50%",]
                     }
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -187,9 +191,11 @@ import { uuid } from "uuidv4"
                         title: "Bịt tai",
                         subtitle : ["", "", ""]
                     },
-                ]
+                ],
+                url:""
             }
-        ]
+        ],
+        url:""
     },
     {
         id: uuid(),
@@ -234,7 +240,8 @@ import { uuid } from "uuidv4"
                         title: "Giày-Dép",
                         subtitle : ["", "", ""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -260,7 +267,8 @@ import { uuid } from "uuidv4"
                         title: "Chống nắng SunStop",
                         subtitle : ["Áo khoác", "Khẩu trang", ""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -281,7 +289,8 @@ import { uuid } from "uuidv4"
                         title: "Phụ kiện khác",
                         subtitle : ["Kính mắt", "Kính bơi", "Mũ", "Khăn quàng", "Thắt lưng", "Tất chân","Khẩu trang các loại","Găng tay"]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -297,7 +306,8 @@ import { uuid } from "uuidv4"
                         title: "Ưu đãi phụ kiện",
                         subtitle : ["Ưu đãi giày thể thao sale up to 50%", "Kính phân cực giảm 50%", "Balo khuyến mãi lên đến 50%"]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -338,9 +348,11 @@ import { uuid } from "uuidv4"
                         title: "Bịt tai",
                         subtitle : ["", "", ""]
                     },
-                ]
+                ],
+                url:""
             }
-        ]
+        ],
+        url:""
     },
     {
         id: uuid(),
@@ -390,7 +402,8 @@ import { uuid } from "uuidv4"
                         title: "Dép nhựa thời trang",
                         subtitle : ["", "", ""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -426,7 +439,8 @@ import { uuid } from "uuidv4"
                         title: "Chống nắng SunStop",
                         subtitle : ["Áo khoác chống nắng", "", ""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -447,7 +461,8 @@ import { uuid } from "uuidv4"
                         title: "Khác",
                         subtitle : ["Khẩu trang các loại", "Mũ len trẻ em", "Dây buộc tóc", "Kính bơi"]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -463,7 +478,8 @@ import { uuid } from "uuidv4"
                         title: "Ưu đãi phụ kiện",
                         subtitle : ["Balo khuyến mãi lên đến 50%", "Ưu đãi giày thể thao lên đến 50%", ""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -504,9 +520,11 @@ import { uuid } from "uuidv4"
                         title: "Bịt tai",
                         subtitle : ["","",""]
                     },
-                ]
+                ],
+                url:""
             }
-        ]
+        ],
+        url:""
     },
     {
         id: uuid(),
@@ -546,7 +564,8 @@ import { uuid } from "uuidv4"
                         title: "Bình nước và Bình giữ nhiệt",
                         subtitle : ["Bình giữ nhiệt","Cốc giữ nhiệt","Bình nước"]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -572,7 +591,8 @@ import { uuid } from "uuidv4"
                         title: "Vệ sinh cá nhân",
                         subtitle : ["Vệ sinh răng miệng","Vệ sinh cơ thể",""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -583,9 +603,11 @@ import { uuid } from "uuidv4"
                         title: "Ưu đãi gia dụng",
                         subtitle : ["Ưu đãi gia dụng cá nhân 30%",]
                     }
-                ]
+                ],
+                url:""
             }
-        ]
+        ],
+        url:""
     },
     {
         id: uuid(),
@@ -620,26 +642,30 @@ import { uuid } from "uuidv4"
                         title: "Nước hoa",
                         subtitle : ["","",""]
                     },
-                ]
+                ],
+                url:""
             }
-        ]
+        ],
+        url:""
     },
     {
         id: uuid(),
         title: "Cửa Hàng",
         detail : [
-            {
-                id: uuid(),
-                title: "",
-                detailChild : [
-                    {
-                        id : uuid(),
-                        title: "",
-                        subtitle : [""]
-                    }
-                ]
-            }
-        ]
+            // {
+            //     id: uuid(),
+            //     title: "",
+            //     detailChild : [
+            //         {
+            //             id : uuid(),
+            //             title: "",
+            //             subtitle : [""]
+            //         }
+            //     ],
+            //     url:""
+            // }
+        ],
+        url:""
     },
     {
         id: uuid(),
@@ -659,7 +685,8 @@ import { uuid } from "uuidv4"
                         title: "Tin ưu đãi",
                         subtitle : ["","",""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -685,7 +712,8 @@ import { uuid } from "uuidv4"
                         title: "Phụ kiện",
                         subtitle : ["","",""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -701,7 +729,8 @@ import { uuid } from "uuidv4"
                         title: "Món ngon",
                         subtitle : ["","",""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -717,7 +746,8 @@ import { uuid } from "uuidv4"
                         title: "Chế độ luyện tập",
                         subtitle : ["","",""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -733,7 +763,8 @@ import { uuid } from "uuidv4"
                         title: "Địa điểm du lịch",
                         subtitle : ["","",""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -749,7 +780,8 @@ import { uuid } from "uuidv4"
                         title: "Sống xanh",
                         subtitle : ["","",""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -765,7 +797,8 @@ import { uuid } from "uuidv4"
                         title: "Ẩm thực",
                         subtitle : ["","",""]
                     },
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -773,10 +806,11 @@ import { uuid } from "uuidv4"
                 detailChild : [
                     {
                         id : uuid(),
-                        title: "vvvv",
-                        subtitle : ["aaaaa", "bbbb", "ccccc"]
+                        title: "",
+                        subtitle : ["", "", ""]
                     }
-                ]
+                ],
+                url:""
             },
             {
                 id: uuid(),
@@ -787,9 +821,11 @@ import { uuid } from "uuidv4"
                         title: "",
                         subtitle : ["", "", ""]
                     }
-                ]
+                ],
+                url:""
             },
-        ]
+        ],
+        url:""
     },
 ]
 export default dataNavbar

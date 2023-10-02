@@ -1,6 +1,7 @@
 "use client"
 import Header from '@/components/Header/Header';
 import './globals.css'
+
 import { usePathname } from "next/navigation";
 import { useState } from 'react';
 import Loading from '@/components/Loading/Loading';
@@ -16,16 +17,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>tokyoLife - Thời trang thông minh & hàng tiêu dùng nhật bản chính hãng</title>
+        <title>TokyoLife - Thời trang thông minh & hàng tiêu dùng nhật bản chính hãng</title>
         <link type="image/png" href="https://file.hstatic.net/200000532555/file/logo_bong_hoa_45c8e9e2088448ad89c72b0377a245a2.png" rel="icon"></link>
       </head>
       <body >
-        <div className='min-h-[100vh] bg-[#F7F7F7] '>
+        <div className='min-h-[100vh] bg-[#F7F7F7] relative'>
           <Providers>
             {
               pathname != "/404"
                 ?
                 <>
+                  <div className="w-[100%] h-[43px] bg-[#c92027] flex justify-center items-center text-[#ffffff]">TOKYO LAI</div>
                   <Header />
                   {children}
                   <Footer />
@@ -35,7 +37,6 @@ export default function RootLayout({
                 <>
                   {isLoading ? <Loading /> : { children }}
                 </>
-
             }
           </Providers>
         </div>
