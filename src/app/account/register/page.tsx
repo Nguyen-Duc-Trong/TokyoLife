@@ -1,9 +1,10 @@
+import Register from "@/components/Register/Register"
 
 export default function Home() {
     return (
         <>
-            <div className='bg-white text-center  '>
-                register
+            <div className='container'>
+                <Register/>
 
             </div>
         </>

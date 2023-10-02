@@ -3,9 +3,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
-import { Popover, Space } from "antd";
+import { Button, Dropdown,Popover, Space } from "antd";
 import PopupHeader from "./PopupHeader/PopupHeader";
 import Navba from "./Navba/Navba";
+import Login from "./Login";
+
 const Header = () => {
 
   return (
@@ -32,9 +34,16 @@ const Header = () => {
             </svg>
           </button>
           <div className="flex flex-col items-center ml-[25px] cursor-pointer">
-            <span className="text-#4a4a4a mb-[5px]">
+          <Dropdown
+        overlay={<Login/>}
+        placement="bottomLeft"
+      >
+        <Button className="text-#4a4a4a mb-[5px] border-none">
               <FontAwesomeIcon size="xl" icon={faUser} />
-            </span>
+            </Button>
+      </Dropdown>
+            
+
             <span className="text-[12px]">Tài khoản</span>
           </div>
           <div className="flex flex-col items-center ml-[25px] relative">
