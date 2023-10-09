@@ -8,9 +8,9 @@ const PopupMenuHeaderRespon = (props:any) => {
     const [showContent,setShowContent]= useState(0)  
     
     return(
-        <div className="min-h-[100vh] w-full box-border  pt-[0] top-0 left-0 fixed ">
+        <div className="min-h-[100vh] w-full box-border  pt-[0] top-0 left-0 fixed z-[1] ">
             <div className="absolute w-[100vw] h-[100vh] left-[0] top-0 z-[11] bg-[rgba(115,115,115,0.7)] "  onClick={()=> setOpenPopupMenuRespon(false)}></div>
-            <div className='w-[80%]  relative flex top-0 left-0  z-20'>
+            <div className='w-[80%]  relative flex top-0 left-0  z-[200]'>
                 <div className=' w-full min-h-[100vh] bg-[#fff] '>
                     <ul className="flex w-full h-[49px]  overflow-x-auto   " >
                         {dataNavbar.map((it,index)=>{
