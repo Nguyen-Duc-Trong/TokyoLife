@@ -1,6 +1,7 @@
 "use client";
 import React,{useState, memo} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import {MdOutlineMenu} from "react-icons/md"
 import PopupMenuHeader from "@/components/Header/PopupMenuHeader/PopupMenuHeader";
@@ -16,7 +17,7 @@ const [OpenPopupSearch, setOpenPopupSearch] = useState(false)
 
 return (
 <header className="h-[65px] w-[100%] justify-center items-center bg-[#fff] sticky top-[-1px] z-[100] shadow-lg ">
-  <div className="relative">
+  <div className="relative h-[100%] flex justify-center items-center">
     <div className="flex justify-between container items-center ">
     <div className=" top-[5px] text-[3rem]" >
       <MdOutlineMenu className=" text-[35px] xl:hidden md:max-xl:block " onClick={()=>setOpenPopupMenuRespon(!OpenPopupMenuRespon)} />
@@ -25,11 +26,12 @@ return (
         }
     </div>
    
-    <h1 className="md:block cursor-pointer">
-      <img className="w-[220px]"
+    <Link href={"/"}>
+      <h1 className="md:block cursor-pointer">
+        <img className="w-[220px]"
         src="https://file.hstatic.net/200000532555/file/logo-tkl-01_50c40d291088493182dd995d3da9e130.png" alt="" />
-    </h1>
-
+      </h1>
+    </Link>
     <div className=" max-lg:hidden">
       <PopupMenuHeader />
     </div>
@@ -42,9 +44,9 @@ return (
           </path>
         </svg>
       </button>
-        <div className="flex flex-col w-[50px] justify-center items-center ml-[25px] cursor-pointer">
-          <Space className="absolute top-[-1px] z-[1000]">
-            <Popover content={<PopupAccount/>} trigger="click" className="top-[-1px] pt-[5px]">
+        <div className="flex flex-col w-[50px] justify-center items-center ml-[25px] cursor-pointer z-0">
+          <Space className="absolute top-[-1px] z-[1]">
+            <Popover content={<PopupAccount/>} trigger="click" className="top-[-1px]">
               <div>
                 <p className="text-#4a4a4a mb-[5px] flex justify-center">
                   <FontAwesomeIcon size="xl" icon={faUser} />
