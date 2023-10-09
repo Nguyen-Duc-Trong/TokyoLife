@@ -63,9 +63,11 @@ const PopupAccount = () => {
                             </Link> and <Link href={'/'}> <span className="text-[#2962ff]">Privacy Policy</span></Link>
                         </div>
                         <Form.Item className="mb-[0px]" wrapperCol={{ offset: 0, span: 160}}>
-                          <Button type="primary" htmlType="submit" className="bg-[#252a2b] font-medium button1 w-[300px] py-[0px] h-[42px] text-[13px] rounded-none">
-                            ĐĂNG NHẬP
-                          </Button>
+                          <Link href={"/account"}>
+                            <Button type="primary" htmlType="submit" className="bg-[#252a2b] font-medium button1 w-[300px] py-[0px] h-[42px] text-[13px] rounded-none">
+                              ĐĂNG NHẬP
+                            </Button>
+                          </Link>
                         </Form.Item>
                         <Form.Item className="mb-[0px]" wrapperCol={{ offset: 0, span: 160}}>
                           <Button type="primary" htmlType="submit" className="bg-[#dd4b39] button2 mt-[10px] mb-[8px] font-medium w-[300px] py-[0px] flex justify-center items-center h-[42px] text-[14px] rounded-[5px]">

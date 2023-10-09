@@ -28,7 +28,7 @@ const PageHome = () => {
                     <Image src="/img/Banner/bn5.png" width={1200} height={280} alt=""/>
                     <Link href={'/'}>
                         <div className="flex justify-between mt-[20px] mb-[30px]">
-                            <h2 className="text-[24px] font-bold">PHỤ KIỆN BALO 50%</h2>
+                            <h2 className="md:text-[24px] text-[16px] font-bold">PHỤ KIỆN BALO 50%</h2>
                             <span>Xem tất cả</span>
                         </div>
                     </Link>
