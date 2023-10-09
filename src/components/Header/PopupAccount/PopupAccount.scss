@@ -1,0 +1,19 @@
+.ant-btn-primary.button1:hover{
+    background-color: black !important;
+}
+
+.ant-btn-primary.button2:hover{
+    background-color: #dd4b39 !important;
+}
+
+.ant-btn-primary.button3:hover{
+    background-color: #3b5998 !important;
+}
+@media only screen and (max-width: 600px) {
+    #PopupAccount{
+        width: 428px !important;
+        margin: auto !important;
+        right: -62px  !important;
+    }
+
+  }

@@ -5,12 +5,19 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import {MdOutlineMenu} from "react-icons/md"
 import PopupMenuHeader from "@/components/Header/PopupMenuHeader/PopupMenuHeader";
 import PopupMenuHeaderRespon from "@/components/Header/PopupMenuHeader/PopupMenuHeaderRespon";
+import PopupSearch from "./PopupSearch/PopupSearch";
+import PopupAccount from "./PopupAccount/PopupAccount";
+import {Popover, Space } from 'antd';
+import "src/components/Header/PopupSearch/PopupSearch.scss"
 const Header = () => {
 
 const [OpenPopupMenuRespon,setOpenPopupMenuRespon ] = useState(false)
+const [OpenPopupSearch, setOpenPopupSearch] = useState(false)
+
 return (
-<header className="h-[65px] w-[100%] flex justify-center items-center bg-[#fff] sticky top-[-1px] z-[100] shadow-lg ">
-  <div className="flex justify-between container items-center ">
+<header className="h-[65px] w-[100%] justify-center items-center bg-[#fff] sticky top-[-1px] z-[100] shadow-lg ">
+  <div className="relative">
+    <div className="flex justify-between container items-center ">
     <div className=" top-[5px] text-[3rem]" >
       <MdOutlineMenu className=" text-[35px] xl:hidden md:max-xl:block " onClick={()=>setOpenPopupMenuRespon(!OpenPopupMenuRespon)} />
         {
@@ -27,20 +34,26 @@ return (
       <PopupMenuHeader />
     </div>
   
-    <div className="flex">
-      <button className="border rounded-3xl">
+    <div className="flex relative justify-center items-center">
+      <button className="border rounded-3xl" onClick={()=>setOpenPopupSearch(!OpenPopupSearch)}>
         <svg className="mx-[19px] my-[10px] svg search" height="18px" width="25px" viewBox="0 0 24 24" fill="#c5cee0">
           <path
             d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39zM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7z">
           </path>
         </svg>
       </button>
-      <div className="flex flex-col items-center ml-[25px] cursor-pointer">
-        <span className="text-#4a4a4a mb-[5px]">
-          <FontAwesomeIcon size="xl" icon={faUser} />
-        </span>
-        <span className="text-[12px]">Tài khoản</span>
-      </div>
+        <div className="flex flex-col w-[50px] justify-center items-center ml-[25px] cursor-pointer">
+          <Space className="absolute top-[-1px] z-[1000]">
+            <Popover content={<PopupAccount/>} trigger="click" className="top-[-1px] pt-[5px]">
+              <div>
+                <p className="text-#4a4a4a mb-[5px] flex justify-center">
+                  <FontAwesomeIcon size="xl" icon={faUser} />
+                </p>
+                <p className="text-[12px]">Tài khoản</p>
+              </div>
+            </Popover>
+          </Space>
+        </div>
       <div className="flex flex-col items-center ml-[25px] relative">
         <span className="mb-[5px] cursor-pointer">
           <svg className="svg-ico-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 -13 456.75885 456" width="25px">
@@ -56,14 +69,20 @@ return (
           </svg>
 
         </span>
-        <div
-          className="bg-red-600 w-[16px] h-[16px] rounded-full flex items-center justify-center text-white text-xs absolute top-0 right-[10px]">
-          0</div>
+        <div className="bg-red-600 w-[16px] h-[16px] rounded-full flex items-center justify-center text-white text-xs absolute top-0 right-[10px]">
+          0
+        </div>
         <span className="text-[12px]">Giỏ hàng</span>
       </div>
     </div>
+    </div>
+    <div id="seachCss" className="absolute top-[4px] md:max-xl:top-[65px] w-[100%]">
+      {
+        OpenPopupSearch && <PopupSearch setOpenPopupSearch={setOpenPopupSearch} />
+      }
+    </div>
+    
   </div>
-
 </header>
 );
 };
