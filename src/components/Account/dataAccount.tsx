@@ -4,6 +4,7 @@ export const dataAccount = [
     {
         id: uuid(),
         title: "Nguyễn Đức Trọng",
+        name:"Trọng",
         email:"trongnguyen123456@gmail.com",
         nationality: "Vietnam",
         phone:"0863866336",

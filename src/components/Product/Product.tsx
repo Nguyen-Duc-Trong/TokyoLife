@@ -6,7 +6,7 @@ import Link from "next/link";
 const Product = (props: any) => {
     const {data} = props
     return(        
-        <div key={data.id} className=" bg-[#ffffff] mx-[5px] max-w-[214px]">
+        <div key={data.id} className=" bg-[#ffffff] mx-[5px] w-[214px]">
            <Link href={`/detail/${data.id}`}>
                 <div className="relative">
                     <Image src={data.img} alt="" />

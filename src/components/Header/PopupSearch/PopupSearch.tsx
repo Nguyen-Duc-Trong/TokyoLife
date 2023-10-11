@@ -3,13 +3,11 @@ import "src/components/Header/PopupSearch/PopupSearch.scss";
 import { SearchOutlined } from '@ant-design/icons';
 import {Input, Space } from 'antd';
 
-const { Search } = Input;
-
 const PopupSearch = (props:any) => {
     const {setOpenPopupSearch} = props
     return(
         <section className="w-[100%] h-[100vh] relative">
-            <div id="PopupSearch" className="container absolute left-[160px] md:max-xl:left-[30px]  bg-[#ffffff] flex justify-between h-[288px] py-[12px] px-[16px] z-10">
+            <div id="PopupSearch" className="container absolute left-[160px] md:max-xl:left-[30px] bg-[#ffffff] flex justify-between h-[288px] py-[12px] px-[16px] z-10">
                 <div>
                     <img className="w-[220px]" src="https://file.hstatic.net/200000532555/file/logo-tkl-01_50c40d291088493182dd995d3da9e130.png" alt="" />
                 </div>

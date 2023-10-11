@@ -7,7 +7,7 @@ import Image from "next/image";
 import logoGg from "public/img/Logo/logoGg.png";
 import logoFb from "public/img/Logo/logoFb.png";
 
-const PopupAccount = () => {
+const PopupAccount = (props:any) => {
   const onFinish = (values: any) => {
     console.log("Success:", values);
   };
@@ -21,6 +21,8 @@ const PopupAccount = () => {
     password?: string;
     remember?: string;
   };
+
+  const {setChangeStatusAcc} = props
 
   return (
     <div
@@ -78,13 +80,12 @@ const PopupAccount = () => {
               className="mb-[0px]"
               wrapperCol={{ offset: 0, span: 160 }}
             >
-              <Button
-                type="primary"
-                htmlType="submit"
-                className="bg-[#252a2b] font-medium button1 w-[300px] py-[0px] h-[42px] text-[13px] rounded-none"
-              >
-                ĐĂNG NHẬP
-              </Button>
+              <Link href={"/account"}>
+                <Button type="primary" htmlType="submit" onClick={()=>setChangeStatusAcc(!setChangeStatusAcc)}
+                  className="bg-[#252a2b] font-medium button1 w-[300px] py-[0px] h-[42px] text-[13px] rounded-none">
+                  ĐĂNG NHẬP
+                </Button>
+              </Link>
             </Form.Item>
             <Form.Item
               className="mb-[0px]"
