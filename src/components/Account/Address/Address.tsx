@@ -21,8 +21,8 @@ export default function Home() {
                     <h1 className="text-[25px] font-bold pb-[15px]">Thông tin địa chỉ</h1>
                     <hr className="border-[2.5px] border-solid w-[70px] border-[#000000] m-auto" />
                 </div>
-                <div className="flex mb-[50px] min-h-[75vh]">
-                    <div className="w-[30%] mx-[15px] py-[20px] px-[15px] h-fit bg-[#ffffff]">
+                <div className="xl:flex md:block mb-[50px] min-h-[75vh]">
+                    <div className="xl:w-[30%] mx-[15px] py-[20px] px-[15px] h-fit bg-[#ffffff]">
                         <h3 className="mb-[10px] text-[15px] font-bold uppercase">Tài khoản</h3>
                         <ul>
                             <Link href="/account">
@@ -47,8 +47,8 @@ export default function Home() {
                             </Link>
                         </ul>
                     </div>
-                    <div className="w-[100%] ml-[10px] flex bg-[#f7f7f7] relative">
-                        <div className="w-[50%] mr-[15px]">
+                    <div className="w-[100%] ml-[10px] xl:flex md:block bg-[#f7f7f7] relative">
+                        <div className="xl:w-[50%] mr-[15px]">
                             {dataAccount.map((it)=>{
                             return(
                             <div className="flex items-center bg-[#d9edf7] justify-between py-[14px] px-[10px]">
@@ -103,7 +103,7 @@ export default function Home() {
                                 })}
                             </div>
                         </div>
-                        <div className="w-[50%] mx-[15px]">
+                        <div className="xl:w-[50%] mx-[15px]">
                             <input className="w-[100%] bg-[#323232] text-[#fff]
                              text-center font-semibold p-[10px]" type="submit" 
                              value="NHẬP ĐỊA CHỈ MỚI"  onClick={()=>setOpenUpdteAddress(!openPopupUpdteAddress)}/>
@@ -111,15 +111,15 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className="mt-[10px] pb-[5px] w-[60%] m-auto">
+                <div className="mb-[40px]">
+                    <div className="mt-[10px] pb-[5px] w-[67%] m-auto">
                         <span className="text-[16px] font-normal text-[#252a2b] ">
                             Đăng kí email để nhận ưu đãi từ TOKYOLIFE
                         </span>
                     </div>
-                    <div className="flex justify-center items-center mb-[40px]">
+                    <div className="flex justify-center items-center">
                         <input
-                            className="h-[50px] w-[55%] border-[1px] outline-none rounded-l-[3px] border-solid border-[#00000059] py-[15px] px-[10px] ml-[85px]"
+                            className="h-[50px] w-[55%] border-[1px] outline-none rounded-l-[3px] border-solid border-[#00000059] py-[15px] px-[10px]"
                             type="email" placeholder="Nhập email của bạn" />
                         <button
                             className="h-[50px] flex justify-center items-center w-[12%] py-[17px] px-[10px] text-[16px] font-medium bg-black text-[#ffffff]">Đăng

@@ -106,7 +106,7 @@ return (
         <div className="bg-red-600 w-[16px] h-[16px] rounded-full flex items-center justify-center text-white text-xs absolute top-0 right-[10px]">
           0
         </div>
-        <span className="text-[12px]">Giỏ hàng</span>
+        <span className="text-[12px] text-center">Giỏ hàng</span>
       </div>
     </div>
     </div>

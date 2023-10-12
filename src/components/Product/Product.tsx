@@ -6,10 +6,10 @@ import Link from "next/link";
 const Product = (props: any) => {
     const {data} = props
     return(        
-        <div key={data.id} className=" bg-[#ffffff] mx-[5px] w-[214px]">
+        <div key={data.id} className=" bg-[#ffffff] mx-[5px]">
            <Link href={`/detail/${data.id}`}>
-                <div className="relative">
-                    <Image src={data.img} alt="" />
+                <div className="relative h-fit">
+                    <Image className="max-h-[320px]" src={data.img} alt="" />
                     <div className="absolute top-[5px] left-[5px] bg-[#ff0000] tracking-[0.5px] z-3 text-[#fff] text-[12px] font-medium py-[2px] px-[5px]">
                         <span>-50%</span>
                     </div>

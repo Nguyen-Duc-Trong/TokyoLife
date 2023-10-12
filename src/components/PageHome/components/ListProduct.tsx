@@ -13,7 +13,7 @@ interface Props {
 const ListProduct = () => {
     return(
         <div>
-            <div className="grid lg:grid-cols-5 gap-5 md:grid-cols-2 max-sm:grid-cols-1 w-fit m-auto ">
+            <div className="grid lg:grid-cols-5 gap-5 md:grid-cols-2 max-sm:grid-cols-2 w-fit m-auto ">
                 {dataProduct.map((it)=>{
                     return(
                         <Product key={it.id} data={it} />

@@ -1,9 +1,13 @@
+"use client";
+import React from "react"
+
 import Link from "next/link"
 import { dataAccount } from "./dataAccount"
 import {BiDisc} from "react-icons/bi"
 
 
-export default function Home() {
+const Account =(props:any) => {
+    const {hanldesetChangeLogout} = props
     return (
         <section>
             <div className='container '>
@@ -11,8 +15,8 @@ export default function Home() {
                     <h1 className="text-[25px] font-bold pb-[15px]">Tài khoản của bạn</h1>
                     <hr className="border-[2.5px] border-solid w-[70px] border-[#000000] m-auto"/>
                 </div>
-                <div className="flex mb-[50px]">
-                    <div className="w-[30%] mx-[15px] py-[20px] px-[15px] h-fit bg-[#ffffff]">
+                <div className="xl:flex md:block mb-[50px]">
+                    <div className="xl:w-[30%] mx-[15px] py-[20px] px-[15px] h-fit bg-[#ffffff]">
                         <h3 className="mb-[10px] text-[15px] font-bold uppercase">Tài khoản</h3>
                         <ul>
                             <Link href="/account">
@@ -61,14 +65,14 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className="mt-[10px] pb-[5px] w-[60%] m-auto">
+                <div className="mb-[40px]">
+                    <div className="mt-[10px] pb-[5px] w-[67%] m-auto">
                         <span className="text-[16px] font-normal text-[#252a2b] ">
                             Đăng kí email để nhận ưu đãi từ TOKYOLIFE
                         </span> 
                     </div>
                     <div className="flex justify-center items-center mb-[40px]">
-                        <input className="h-[50px] w-[55%] border-[1px] rounded-l-[3px] border-solid border-[#00000059] py-[15px] px-[10px] ml-[85px] outline-none" type="email"  placeholder="Nhập email của bạn" />
+                        <input className="h-[50px] w-[55%] border-[1px] rounded-l-[3px] border-solid border-[#00000059] py-[15px] px-[10px]  outline-none" type="email"  placeholder="Nhập email của bạn" />
                         <Link className="contents" href={"account/register"}>
                             <button className="h-[50px] flex justify-center items-center w-[12%] py-[17px] px-[10px] text-[16px] font-medium bg-black text-[#ffffff]">Đăng ký</button>
                         </Link>
@@ -78,3 +82,5 @@ export default function Home() {
         </section>
     )
 }
+
+export default Account
