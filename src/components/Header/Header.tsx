@@ -10,11 +10,20 @@ import PopupSearch from "./PopupSearch/PopupSearch";
 import PopupAccount from "./PopupAccount/PopupAccount";
 import {Popover, Space } from 'antd';
 import "src/components/Header/PopupSearch/PopupSearch.scss"
+import { dataAccount } from "../Account/dataAccount";
+import {FaAngleDown} from "react-icons/fa"
+import PopupAccLogged from "./PopupAccount/PopupAccLogged/PopupAccLogged";
 const Header = () => {
 
 const [OpenPopupMenuRespon,setOpenPopupMenuRespon ] = useState(false)
 const [OpenPopupSearch, setOpenPopupSearch] = useState(false)
-
+const [ChangeStatusAcc, setChangeStatusAcc] = useState(false)
+const hanldeSetChangeStatusAcc = ()=>{
+  setChangeStatusAcc(!ChangeStatusAcc)
+}
+const hanldesetChangeLogout = ()=>{
+  setChangeStatusAcc(false)
+}
 return (
 <header className="h-[65px] w-[100%] justify-center items-center bg-[#fff] sticky top-[-1px] z-[100] shadow-lg ">
   <div className="relative h-[100%] flex justify-center items-center">
@@ -44,10 +53,32 @@ return (
           </path>
         </svg>
       </button>
-        <div className="flex flex-col w-[50px] justify-center items-center ml-[25px] cursor-pointer z-0">
-          <Space className="absolute top-[-1px] z-[1]">
-            <Popover content={<PopupAccount/>} trigger="click" className="top-[-1px]">
-              <div>
+      <div className="flex flex-col w-[50px] justify-center items-center ml-[25px] cursor-pointer z-0">
+        {
+          ChangeStatusAcc ? 
+          <Space  className="absolute top-[-1px]">
+            <Popover content={<PopupAccLogged hanldesetChangeLogout = {hanldesetChangeLogout}/>} trigger="click" className="top-[-1px]">
+              <div className="">
+                {dataAccount.map((it)=>{
+                return(
+                <div key={it.id}>
+                  <span className="text-[12px]">Tài khoản</span>
+                  <span className="flex items-center text-[14px] font-medium">
+                    {it.name}
+                    <span className="text-[13px] ml-[3px]">
+                      <FaAngleDown />
+                    </span>
+                  </span>
+                </div>
+                )
+                })}
+              </div>
+            </Popover>
+          </Space>
+          :
+          <Space className="absolute top-[-1px]">
+            <Popover content={<PopupAccount setChangeStatusAcc = {hanldeSetChangeStatusAcc} />} trigger="click" className="top-[-1px]">
+              <div className="">
                 <p className="text-#4a4a4a mb-[5px] flex justify-center">
                   <FontAwesomeIcon size="xl" icon={faUser} />
                 </p>
@@ -55,7 +86,8 @@ return (
               </div>
             </Popover>
           </Space>
-        </div>
+        }
+      </div>
       <div className="flex flex-col items-center ml-[25px] relative">
         <span className="mb-[5px] cursor-pointer">
           <svg className="svg-ico-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 -13 456.75885 456" width="25px">
@@ -83,7 +115,6 @@ return (
         OpenPopupSearch && <PopupSearch setOpenPopupSearch={setOpenPopupSearch} />
       }
     </div>
-    
   </div>
 </header>
 );
