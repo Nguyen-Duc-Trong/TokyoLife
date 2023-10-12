@@ -21,8 +21,8 @@ export default function Home() {
                     <h1 className="text-[25px] font-bold pb-[15px]">Thông tin địa chỉ</h1>
                     <hr className="border-[2.5px] border-solid w-[70px] border-[#000000] m-auto" />
                 </div>
-                <div className="xl:flex md:block mb-[50px] min-h-[75vh]">
-                    <div className="xl:w-[30%] mx-[15px] py-[20px] px-[15px] h-fit bg-[#ffffff]">
+                <div className="lg:flex md:block mb-[50px] min-h-[75vh]">
+                    <div className="lg:w-[30%] mx-[15px] py-[20px] px-[15px] h-fit bg-[#ffffff]">
                         <h3 className="mb-[10px] text-[15px] font-bold uppercase">Tài khoản</h3>
                         <ul>
                             <Link href="/account">
@@ -103,7 +103,7 @@ export default function Home() {
                                 })}
                             </div>
                         </div>
-                        <div className="xl:w-[50%] mx-[15px]">
+                        <div className="lg:w-[50%] mx-[15px]">
                             <input className="w-[100%] bg-[#323232] text-[#fff]
                              text-center font-semibold p-[10px]" type="submit" 
                              value="NHẬP ĐỊA CHỈ MỚI"  onClick={()=>setOpenUpdteAddress(!openPopupUpdteAddress)}/>

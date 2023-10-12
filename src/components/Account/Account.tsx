@@ -15,8 +15,8 @@ const Account =(props:any) => {
                     <h1 className="text-[25px] font-bold pb-[15px]">Tài khoản của bạn</h1>
                     <hr className="border-[2.5px] border-solid w-[70px] border-[#000000] m-auto"/>
                 </div>
-                <div className="xl:flex md:block mb-[50px]">
-                    <div className="xl:w-[30%] mx-[15px] py-[20px] px-[15px] h-fit bg-[#ffffff]">
+                <div className="lg:flex md:block mb-[50px]">
+                    <div className="lg:w-[30%] mx-[15px] py-[20px] px-[15px] h-fit bg-[#ffffff]">
                         <h3 className="mb-[10px] text-[15px] font-bold uppercase">Tài khoản</h3>
                         <ul>
                             <Link href="/account">
