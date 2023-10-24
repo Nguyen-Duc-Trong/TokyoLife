@@ -32,7 +32,7 @@ const PopupAccLogged = (props:any) => {
                         <Link href={"/"}>
                             <li className="flex items-center mb-[5px]">
                                 <span className="text-[20px] text-[#252a2b]"><BsDot/></span>
-                                <span  onClick={()=>hanldesetChangeLogout(hanldesetChangeLogout)} className="text-[#252a2b] px-[4px]">Đăng xuất</span>
+                                <span onClick={()=> hanldesetChangeLogout(hanldesetChangeLogout)} className="text-[#252a2b] px-[4px]">Đăng xuất</span>
                             </li>
                         </Link>
                     </ul>

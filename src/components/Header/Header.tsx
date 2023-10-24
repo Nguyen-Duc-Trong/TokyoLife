@@ -255,6 +255,7 @@ const Header = () => {
             <PopupSearch setOpenPopupSearch={setOpenPopupSearch} />
           )}
         </div>
+        <span className="text-[12px] text-center">Giỏ hàng</span>
       </div>
     </header>
   );
