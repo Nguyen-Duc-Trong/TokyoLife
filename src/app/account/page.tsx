@@ -1,10 +1,9 @@
+import Account from "@/components/Account/Account"
 
 export default function Home() {
     return (
         <>
-            <div className='bg-white text-center  '>
-                account
-            </div>
+            <Account/>
         </>
     )
 }

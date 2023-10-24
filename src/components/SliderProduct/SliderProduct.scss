@@ -1,0 +1,49 @@
+.slick-prev, .slick-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    z-index: 10;
+    width: 32px;
+    height: 32px;
+    border-radius: 10rem;
+}
+.slick-initialized:hover .slick-prev:before   {
+    color: black !important;
+}
+.slick-initialized:hover .slick-next:before {
+    color: black !important;
+}
+.slick-prev{
+    left: 20px;
+}
+.slick-next{
+    right: 20px;
+}
+// .slick-prev:hover:before{
+//     color: black !important;
+ 
+// }
+// .slick-next:hover:before{
+//     color: black !important;
+    
+// }
+ .slick-prev::before{
+    position: absolute;
+    content: "←";
+    z-index: 10;
+    border-radius: 10rem;
+    top: 0;
+    font-size: 32px;
+}
+ .slick-next::before{
+    position: absolute;
+    content: "→";
+     z-index: 10;
+    border-radius: 10rem;
+    top: 0;
+    font-size: 32px;
+ }
+.centerMode{
+    padding: 0 96px;
+}

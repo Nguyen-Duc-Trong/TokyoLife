@@ -1,0 +1,20 @@
+
+@media only screen and (max-width: 600px) {
+    
+    #PopupSearch{
+        left: 0;
+    }
+    #seachCss{
+        top: 65px;
+        width: 100%;
+    }
+    #seachCss input {
+        width: 332px !important;
+    }
+    #btn-delete{
+        position: absolute;
+        z-index: 10000;
+        right: 10px;     
+        top : 10px;
+    }
+  }
