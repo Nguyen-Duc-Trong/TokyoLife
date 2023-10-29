@@ -10,6 +10,7 @@ import {
   Thumbs,
   FreeMode,
 } from "swiper/modules";
+import "./style.scss";
 export interface SliderDetail {
   img: any;
 }

@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
 import { FC } from "react";
-import DetailImage from "./DetaiImage";
 import DetailContent from "./DetailContent";
 import Link from "next/link";
+import "./style.scss";
+import DetailImage from "./DetaiImage";
 interface Props {
   id?: any;
 }
