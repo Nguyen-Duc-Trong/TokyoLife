@@ -12,9 +12,11 @@ const DetailImage = () => {
         ))}
       </div>
       <div className="flex">
-        {dataDetail.map((item) => (
-          <ImgMain key={item.id} {...item} />
-        ))}
+        {/* {dataDetail.map((item) => (
+          <ImgMain key={item.id} {...item} /> // m có thấy có cái gì nó sai sai ko  t  kb:)))) t làm giống mẫu m chia cpn sai r
+        ))} */}
+
+        <ImgMain dataImages={dataDetail} />
       </div>
     </div>
   );

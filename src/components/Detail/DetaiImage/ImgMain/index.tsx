@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
+import "./style.scss"; // m đang shopee đấy à :))ko m owiiiii t đang liên hệ tìm phòng nãy tìm váy vì sắp sn r
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,15 +11,17 @@ import {
   Thumbs,
   FreeMode,
 } from "swiper/modules";
-import "./style.scss";
-export interface SliderDetail {
-  img: any;
+
+interface dataImage {
+  dataImages: any[];
 }
-const ImgMain = ({ img }: SliderDetail) => {
+const ImgMain: FC<dataImage> = ({ dataImages }) => {
+  console.log("data", dataImages);
+
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass>();
   return (
     <div>
-      <div>
+      <div className="ml-[80px] relative">
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
@@ -28,7 +31,6 @@ const ImgMain = ({ img }: SliderDetail) => {
             disableOnInteraction: false,
           }}
           centeredSlides={true}
-          // autoplay={true}
           thumbs={{ swiper: thumbsSwiper }}
           width={430}
           navigation={true}
@@ -37,9 +39,11 @@ const ImgMain = ({ img }: SliderDetail) => {
           modules={[Pagination, Navigation, Autoplay, Thumbs]}
           className="swiper_style mySwiper2"
         >
-          <SwiperSlide>
-            <img src={img} alt="" />
-          </SwiperSlide>
+          {dataImages.map((item: any) => (
+            <SwiperSlide key={item.id}>
+              <img src={item.img} alt="" />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

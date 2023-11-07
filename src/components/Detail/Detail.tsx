@@ -25,7 +25,7 @@ const Detail: FC<Props> = (id: any) => {
           <Link href="">NỮ/Áo chống nắng Sunstop Master mũ liền F9UVJ056M</Link>
         </li>
       </ul>
-      <div>
+      <div className="flex justify-between">
         <DetailImage />
         <DetailContent />
       </div>

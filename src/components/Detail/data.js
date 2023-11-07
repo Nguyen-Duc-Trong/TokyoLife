@@ -26,10 +26,28 @@ export const dataDetail = [
     },
     {
         id: uuidv4(),
-        img: 'https://tokyolife.vn/nu-ao-chong-nang-sunstop-master-mu-lien-f9uvj056m-f9uvj056m'
+        img: 'https://pm2ec.s3.amazonaws.com/cms/products/F9UVJ056M-025/61f1f2cd6efa48edbdeb7aace84732fc_optimized_original_image.jpg'
     },
     {
         id: uuidv4(),
-        img: 'https://tokyolife.vn/nu-ao-chong-nang-sunstop-master-mu-lien-f9uvj056m-f9uvj056m'
+        img: 'https://pm2ec.s3.amazonaws.com/cms/products/F9UVJ056M-030/8f4a20075dfc4827ab5e723bf53c04ec_optimized_original_image.jpg'
     }
+]
+export const sizeProduct = [
+    {
+        id: uuidv4(),
+        size: "M"
+    },
+    {
+        id: uuidv4(),
+        size: "L"
+    },
+    {
+        id: uuidv4(),
+        size: "XL"
+    },
+    {
+        id: uuidv4(),
+        size: "2XL"
+    },
 ]
