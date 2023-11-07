@@ -9,17 +9,15 @@ const ImgItem = ({ img }: ICard1Props) => {
     setActive(!active);
   };
   return (
-    <div>
-      <div>
-        <img
-          onClick={handleChangeBorder}
-          className={`w-[96px] mb-4 ${
-            active ? "shadow-[0px_0px_8px_0px_rgba(255,0,0,0.6)]" : ""
-          }`}
-          src={img}
-          alt=""
-        />
-      </div>
+    <div className="text-white">
+      <img
+        onClick={handleChangeBorder}
+        className={`w-[96px] mb-4 ${
+          active ? "shadow-[0px_0px_8px_0px_rgba(255,0,0,0.6)]" : ""
+        }`}
+        src={img}
+        alt=""
+      />
     </div>
   );
 };

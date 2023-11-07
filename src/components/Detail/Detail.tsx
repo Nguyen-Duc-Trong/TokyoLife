@@ -5,6 +5,8 @@ import DetailContent from "./DetailContent";
 import Link from "next/link";
 import "./style.scss";
 import DetailImage from "./DetaiImage";
+import DetailText from "./DetailContent/DetailText";
+import Comment from "./Comment";
 interface Props {
   id?: any;
 }
@@ -29,6 +31,8 @@ const Detail: FC<Props> = (id: any) => {
         <DetailImage />
         <DetailContent />
       </div>
+      <DetailText />
+      <Comment />
     </div>
   );
 };

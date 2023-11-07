@@ -6,16 +6,12 @@ import ImgMain from "./ImgMain";
 const DetailImage = () => {
   return (
     <div className="flex">
-      <div>
+      <div className="h-[650px] overflow-y-auto table-left">
         {dataDetail.map((item) => (
           <ImgItem key={item.id} {...item} />
         ))}
       </div>
       <div className="flex">
-        {/* {dataDetail.map((item) => (
-          <ImgMain key={item.id} {...item} /> // m có thấy có cái gì nó sai sai ko  t  kb:)))) t làm giống mẫu m chia cpn sai r
-        ))} */}
-
         <ImgMain dataImages={dataDetail} />
       </div>
     </div>
