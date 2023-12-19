@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
-import "./style.scss"; // m đang shopee đấy à :))ko m owiiiii t đang liên hệ tìm phòng nãy tìm váy vì sắp sn r
+import Image from "next/image";
+import "./style.scss";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -41,7 +42,7 @@ const ImgMain: FC<dataImage> = ({ dataImages }) => {
         >
           {dataImages.map((item: any) => (
             <SwiperSlide key={item.id}>
-              <img src={item.img} alt="" />
+              <Image src={item.img} alt="" />
             </SwiperSlide>
           ))}
         </Swiper>

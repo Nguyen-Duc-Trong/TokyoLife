@@ -29,7 +29,7 @@ const Detail: FC<Props> = (id: any) => {
       </ul>
       <div className="flex justify-between">
         <DetailImage />
-        <DetailContent />
+        <DetailContent id={id} />
       </div>
       <DetailText />
       <Comment />

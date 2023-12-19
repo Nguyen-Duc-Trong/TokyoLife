@@ -1,18 +1,36 @@
 import { useState } from "react";
 import { dataDetail, sizeProduct } from "@/components/Detail/data";
 import { Button, Input } from "antd";
+import Image from "next/image";
+import { addToCart } from "@/redux/slides/userSlide";
+import { useDispatch } from "react-redux";
+import { FC } from "react";
 
-const DetailContent = () => {
-  const [isActive, setIsActive] = useState(false);
+interface Props {
+  id?: any;
+}
+const DetailContent: FC<Props> = (id: any, it: any) => {
+  const [isActive, setIsActive] = useState("");
   const [counter, setCounter] = useState(1);
-  const handleActive = () => {
-    setIsActive(!isActive);
+  const handleActive = (size: string) => {
+    setIsActive((prev) => {
+      if (prev == size) {
+        return "";
+      } else {
+        return size;
+      }
+    });
   };
   const handleDecrement = () => {
     setCounter(counter - 1);
   };
   const handleIncrement = () => {
     setCounter(counter + 1);
+  };
+  const dispatch = useDispatch();
+  const hihiId = id?.id?.params?.id;
+  const addProductToCart = (it: any) => {
+    dispatch(addToCart(it));
   };
   return (
     <div>
@@ -65,7 +83,7 @@ const DetailContent = () => {
             <div className="flex gap-2 ">
               {dataDetail.map((item) => (
                 // eslint-disable-next-line react/jsx-key
-                <img src={item.img} className="w-9 h-9 rounded-full" alt="" />
+                <Image src={item.img} className="w-9 h-9 rounded-full" alt="" />
               ))}
             </div>
           </div>
@@ -75,10 +93,11 @@ const DetailContent = () => {
               {sizeProduct.map((item) => (
                 // eslint-disable-next-line react/jsx-key
                 <Button
-                  className={`border px-4 py-[6px] rounded-[50px] flex items-center${
-                    isActive ? "bg-black text-white " : ""
+                  key={Math.random()}
+                  className={`border px-4 py-[6px] rounded-[50px] flex items-center ${
+                    isActive === item.size ? "bg-black text-white " : ""
                   } `}
-                  onClick={handleActive}
+                  onClick={() => handleActive(item.size)}
                 >
                   {item.size}
                 </Button>
@@ -125,7 +144,10 @@ const DetailContent = () => {
 
         <div className="border-b-[6px] border-rgb(250,249,248)-[6px] pb-6">
           <div className="flex mt-4 gap-3">
-            <Button className="flex items-center p-3 border-[rgb(201,32,39)] text-[rgb(201,32,39)] h-[48px] w-[184px] gap-2 justify-center hover:shadow-[0px_2px_4px_0px_rgba(0,0,0,0.2)] hover:!border-[rgb(201,32,39)] hover:!text-[rgb(201,32,39)]">
+            <Button
+              onClick={() => addProductToCart(it)}
+              className="flex items-center p-3 border-[rgb(201,32,39)] text-[rgb(201,32,39)] h-[48px] w-[184px] gap-2 justify-center hover:shadow-[0px_2px_4px_0px_rgba(0,0,0,0.2)] hover:!border-[rgb(201,32,39)] hover:!text-[rgb(201,32,39)]"
+            >
               <svg
                 width="25"
                 height="24"
@@ -168,6 +190,7 @@ const DetailContent = () => {
               </svg>
               Thêm giỏ hàng
             </Button>
+
             <Button className="flex items-center p-3 h-[48px] text-white bg-[rgb(201,32,39)] w-[184px] gap-2 justify-center hover:shadow-[0px_2px_4px_0px_rgba(0,0,0,0.2)] hover:!border-[rgb(201,32,39)] hover:!text-white">
               <svg
                 width="18"
