@@ -33,6 +33,7 @@ function HeaderSearch(props:any) {
             </div>
             <button className="cursor-pointer  flex justify-center items-center w-10 h-10 rounded-[50%] bg-[#f5f5f5] " onClick={()=>setIsDropDownSearch(false)}>
               <svg
+              
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"
                 viewBox="0 0 384 512"
@@ -40,6 +41,7 @@ function HeaderSearch(props:any) {
                 <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
               </svg>
             </button>
+            
           </div>
           <span className="flex justify-end pt-[20px] w-[43%]">Gợi ý cho bạn:</span>
         </div>

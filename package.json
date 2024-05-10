@@ -42,5 +42,9 @@
     "typescript": "5.2.2",
     "uuid": "^9.0.1",
     "uuidv4": "^6.2.13"
-  }
+  },
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
